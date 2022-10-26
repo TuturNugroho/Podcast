@@ -1,0 +1,301 @@
+/* halaman Index */
+body {
+  background-color: #202040;
+  color: white;
+}
+
+/* Bagian Navbar */
+
+nav {
+  background-color: #202040;
+}
+.window-scroll {
+  background-color: #b1b2ff;
+}
+.window-scroll .active a {
+  color: #202040;
+}
+
+.window-scroll img {
+  filter: brightness(200%);
+}
+
+.navbar-nav a {
+  color: white;
+  align-items: center;
+  margin: 0 30px 0 0;
+}
+
+.navbar-nav {
+  text-align: center;
+}
+.navbar-nav li a {
+  text-align: center;
+}
+.d-flex {
+  margin-left: 180px;
+}
+.d-flex a {
+  text-decoration: none;
+  color: white;
+}
+
+.navbar-nav a:hover {
+  color: #a3d8f4;
+}
+
+.active a {
+  color: #a3d8f4;
+}
+/* Bagian Akhir Navbar */
+@keyframes yanto {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.animate {
+  animation: yanto 5s;
+}
+
+/* .media-body {
+  margin-top: 40px;
+} */
+.media-body .warna {
+  font-family: "Times New Roman", Times, serif;
+  color: #a3d8f4;
+  margin-top: 10px;
+}
+.media-body a {
+  border: 0;
+  margin-right: 20px;
+}
+/* Bagian Awal Banner */
+
+/* Bagian Awal Warkspace */
+.workspace .about-text .checkbox {
+  margin-bottom: 5px;
+}
+
+.workspace .about-text font {
+  font-size: 7;
+}
+
+.workspace .btn {
+  border: 0;
+  margin-top: 20px;
+  width: 500px;
+  height: 60px;
+  /* background-color: #b1b2ff; */
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
+}
+.workspace .btn img {
+  margin-top: 5px;
+  float: left;
+}
+
+.workspace .btn .identitas {
+  float: left;
+  margin-left: 15px;
+}
+
+.workspace .track {
+  display: flex;
+  align-items: right;
+}
+.workspace .track img {
+  cursor: pointer;
+}
+.workspace .track div {
+  display: 1;
+  align-items: center;
+}
+/* Bagian Akhir Warkspace */
+
+/* ` */
+.podcast {
+  margin-top: 20px;
+}
+
+.podcast .row {
+  position: relative;
+  max-width: 800px; /* Maximum width */
+  margin: 0 auto; /* Center it */
+}
+
+.podcast .content {
+  position: absolute; /* Posit  ion the background text */
+  bottom: 0; /* At the bottom. Use top:0 to append it to the top */
+  /* Fallback color */
+  background: rgba(149, 149, 149, 0.5); /* Black background with 0.5 opacity */
+  color: #f1f1f1; /* Grey text */
+  width: 176px; /* Full width */
+  height: 90px; /* Some padding */
+}
+
+.podcast.content:hover {
+  background-color: #00fff28c;
+}
+/* 
+Akhir Podcast */
+
+/* Awal Membership */
+.membership {
+  background-color: white;
+  margin-top: 50px;
+  /* margin-bottom: 50px; */
+  padding: 60px;
+}
+.membership p {
+  color: #202040;
+}
+/* .membership a {
+  margin-left: 100px;
+} */
+
+/* 
+awal Comunity */
+.comunity {
+  /* margin-top: 100px; */
+}
+
+img {
+  margin: 0;
+}
+footer {
+  background-color: white;
+  /* margin-bottom: 500px; */
+}
+
+footer h5 {
+  color: #202040;
+}
+footer p {
+  color: #202040;
+}
+footer a {
+  color: #b1b2ff;
+}
+/* akhir Halaman index */
+
+/* Halaman EPISODE */
+
+.parallax1 {
+  background-image: url("img/episode1.jpg");
+
+  min-height: 500px;
+
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.parallax2 {
+  background-image: url("img/episode2.jpg");
+
+  min-height: 500px;
+
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.parallax3 {
+  background-image: url("img/episode3.1.jpg");
+
+  min-height: 500px;
+
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* Halaman Trending  */
+.parallax4 {
+  background-image: url("img/trending.jpg");
+
+  min-height: 500px;
+
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.media-trending {
+  margin-left: -100px;
+  margin-top: -200px;
+}
+
+.scrollup .container {
+  margin-bottom: 0;
+}
+
+.chat {
+  margin-top: 100px;
+  margin-left: 70px;
+}
+.chat .container {
+  border: 2px solid #b030b0;
+  background-color: white;
+  color: #202040;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 10px 0;
+}
+
+.darker {
+  color: #202040;
+  background-color: #ddd;
+}
+
+.chat .container::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.chat .container img {
+  float: left;
+  max-width: 60px;
+  width: 100%;
+  margin-right: 20px;
+  border-radius: 50%;
+}
+
+.chat .container img.right {
+  float: right;
+  margin-left: 20px;
+  margin-right: 0;
+}
+
+.time-right {
+  float: right;
+  color: #aaa;
+}
+
+.time-left {
+  float: left;
+  color: #999;
+}
+
+/* About Halaman */
+
+.workspace-about {
+  margin-top: 100px;
+}
+
+/* Blog Halaman */
+
+.team {
+  margin-top: 100px;
+}
+.team h5 {
+  color: #202040;
+}
+.team p {
+  color: #202040;
+}

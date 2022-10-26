@@ -1,0 +1,878 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <!-- Link Wafe JS -->
+    <script src="https://unpkg.com/wavesurfer.js"></script>
+
+    <!-- Link CSS -->
+    <link rel="stylesheet" href="style.css" />
+    <link type="image/x-icon" rel="icon" href="icon/icon-rev-warna.png" />
+    <title>Podium #PodcastRahasiaUmum</title>
+  </head>
+  <script>
+    window.addEventListener("scroll", () => {
+      document
+        .querySelector("nav")
+        .classList.toggle("window-scroll", window.scrollY > 0);
+    });
+
+    // var playBtn = document.getElementById("playBtn");
+    // var wavesurfer = WaveSurfer.create({
+    //   container: "#waveform",
+    //   waveColor: "violet",
+    //   progressColor: "purple",
+    //   barwidth: 4,
+    //   responsive: true,
+    //   height: 90,
+    //   barRadius: 4,
+    // });
+
+    // wavesurfer.load("audio/workspace.mp3");
+  </script>
+
+  <body>
+    <!-- Bagian Awal Navbar -->
+    <header>
+      <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+          <!--Navbar Brand-->
+          <a class="navbar-brand" href="index.html">
+            <img src="icon/logo-biru.png" alt="" />
+          </a>
+
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav ms-auto">
+              <li class="nav-item active">
+                <a class="nav-link" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="episode-page.html">Episode</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="trending-page.html">Trending</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="comunity-page.html">Comunity</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Blog</a>
+              </li>
+            </div>
+          </div>
+
+          <form class="d-flex">
+            <a href="index.html">Sign Out </a>
+          </form>
+        </div>
+      </nav>
+    </header>
+    <!-- Bagian Akhir Navbar -->
+
+    <!-- Bagian Awal Banner -->
+    <section>
+      <div class="container">
+        <div class="media">
+          <div class="row align-items-center">
+            <div class="col-sm-6">
+              <div class="media-body">
+                <p class="warna">New Session Avaible</p>
+                <h1 class="nil">
+                  The Best Place <br />
+                  To Listen To Your Favorite
+                  <b> <span style="color: #a3d8f4">Podcast</span> </b>in Another
+                  Lives
+                </h1>
+                <p>
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  Ipsum quam cum <br />
+                  eveniet nostrum accusantium fuga eaque fugiat necessitatibus
+                  iure, laboriosam cupiditate <br />
+                </p>
+                <a
+                  class="btn btn-light"
+                  type="button"
+                  style="background-color: #a3d8f4; color: white"
+                  href="halaman-daftar.html"
+                >
+                  Start for Trial </a
+                ><a
+                  class="btn btn-light"
+                  type="button"
+                  href="halaman-daftar.html"
+                >
+                  <img src="icon/play.png" alt="" width="25px" height="25px" />
+                  How it's work
+                </a>
+              </div>
+            </div>
+            <div class="col-sm-3">
+              <img
+                src="img/banner1.png"
+                alt=""
+                height="500px"
+                style="margin-top: 180px"
+              />
+            </div>
+            <div class="col-sm-3">
+              <img
+                src="img/banner2.png"
+                alt=""
+                height="500px"
+                style="margin-bottom: 70px"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Bagian Awal Banner -->
+
+    <!-- BAgian Awal Brand -->
+    <section class="brand" style="background-color: white">
+      <br /><br />
+      <div class="row text-center animate">
+        <div class="row align-items-center" style="margin-bottom: 50px">
+          <div class="col-sm-2">
+            <img src="icon/spotify.png" alt="" width="100px" height="50px" />
+          </div>
+          <div class="col-sm-3">
+            <img src="icon/attentive.png" alt="" width="100px" height="50px" />
+          </div>
+          <div class="col-sm-2">
+            <img src="icon/podia.png" alt="" width="100px" height="50px" />
+          </div>
+          <div class="col-sm-3">
+            <img src="icon/youtube.png" alt="" width="100px" height="50px" />
+          </div>
+          <div class="col-sm-2">
+            <img src="icon/twitch.png" alt="" width="100px" height="50px" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Bagian Akhir brand -->
+
+    <!-- Bagian Awal Workspace -->
+    <section class="workspace" style="background-color: white">
+      <div class="container">
+        <div class="row Workspace">
+          <div class="col-sm-6">
+            <img
+              width="400"
+              height="200"
+              src="img/workspace.png"
+              alt=""
+              class="img-fluid"
+            />
+          </div>
+          <div class="col-sm-6">
+            <div class="about-text" style="color: #202040">
+              <h1>What distinguishes ourselves from others?</h1>
+              <font
+                >Our competitors are wasting resource because to be inspired to
+                become creative</font
+              >
+              <br />
+              <br />
+
+              <div class="checkbox">
+                <img
+                  src="icon/checkbox.png"
+                  alt=""
+                  width="20px"
+                  height="20px; "
+                />
+                <b style="margin-left: 20px"
+                  >Record your episodes at occasions</b
+                >
+              </div>
+
+              <div class="checkbox">
+                <img
+                  src="icon/checkbox.png"
+                  alt=""
+                  width="20px"
+                  height="20px; "
+                />
+                <b style="margin-left: 20px"
+                  >Have a discussion with people you like</b
+                >
+              </div>
+
+              <div class="checkbox">
+                <img
+                  src="icon/checkbox.png"
+                  alt=""
+                  width="20px"
+                  height="20px; "
+                />
+                <b style="margin-left: 20px"
+                  >Let other people know about your thoughts</b
+                >
+              </div>
+
+              <div type="button" class="btn btn-light rounded-pill">
+                <img src="img/img-button.png" alt="" />
+                <div class="identitas">
+                  <b>Tutur Nugroho</b> <br />
+                  Podcaster handal
+                </div>
+                <!-- <div class="track">
+                  <div id="wavefrom"></div>
+                  <img
+                    src="icon/play-music.png"
+                    id="playBtn"
+                    width="40px"
+                    height="40px"
+                    alt=""
+                  />
+                </div> -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Bagian Awal Workspace -->
+
+    <!-- Bagian Awal Popular -->
+    <section class="popular">
+      <div class="container">
+        <div class="row">
+          <div class="section-header-team text-center">
+            <br />
+            <h2 style="color: #a3d8f4">Most Popular Creator</h2>
+            <p>
+              have established good cooperation for the future of <br />
+              technology Lorem ipsum dolor sit amet consectetur.
+            </p>
+            <br />
+            <button
+              type="button"
+              class="btn btn-light"
+              style="
+                background-color: #9ab3f5;
+                color: white;
+                border: 0;
+                margin-bottom: 20px;
+              "
+            >
+              View All -->
+            </button>
+          </div>
+          <div class="section">
+            <div class="row">
+              <div class="col-sm-4">
+                <div
+                  class="row"
+                  style="
+                    background-color: #7579e7;
+                    border-radius: 25px;
+                    width: 350px;
+                    height: 250px;
+                  "
+                >
+                  <div class="col-sm-6">
+                    <div class="gambar">
+                      <img
+                        src="img/most1.png"
+                        width="150px"
+                        height="270px"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                  <div class="col-sm-6">
+                    <div class="identitas" style="margin-top: 20px">
+                      <b>Get to Know about user research</b> <br />
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Fugit, ipsa! <br />
+                      <br />
+                      <a
+                        class="btn btn-light"
+                        type="button"
+                        href="halaman-daftar.html"
+                      >
+                        <img
+                          src="icon/play.png"
+                          alt=""
+                          width="25px"
+                          height="25px"
+                        />
+                        Play One
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-4">
+                <div
+                  class="row"
+                  style="
+                    background-color: #9ab3f5;
+                    border-radius: 25px;
+                    width: 350px;
+                    height: 250px;
+                  "
+                >
+                  <div class="col-sm-6">
+                    <div class="gambar">
+                      <img
+                        src="img/most22.png"
+                        width="150px"
+                        height="270px"
+                        style=""
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                  <div class="col-sm-6">
+                    <div class="identitas" style="margin-top: 20px">
+                      <b>Get to Know about Marketing</b> <br />
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Fugit, ipsa! <br />
+                      <br />
+                      <a
+                        class="btn btn-light"
+                        type="button"
+                        href="halaman-daftar.html"
+                      >
+                        <img
+                          src="icon/play.png"
+                          alt=""
+                          width="25px"
+                          height="25px"
+                        />
+                        Play One
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-4">
+                <div
+                  class="row"
+                  style="
+                    background-color: #a3d8f4;
+                    border-radius: 25px;
+                    width: 350px;
+                    height: 250px;
+                  "
+                >
+                  <div class="col-sm-6">
+                    <div class="gambar">
+                      <img
+                        src="img/most4.png"
+                        width="150px"
+                        height="270px"
+                        style=""
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                  <div class="col-sm-6">
+                    <div class="identitas" style="margin-top: 20px">
+                      <b>Get to manage money well</b> <br />
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Fugit, ipsa! <br />
+                      <br />
+                      <a
+                        class="btn btn-light"
+                        type="button"
+                        href="halaman-daftar.html"
+                      >
+                        <img
+                          src="icon/play.png"
+                          alt=""
+                          width="25px"
+                          height="25px"
+                        />
+                        Play One
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- <div class="col-sm-4">
+                <div class="card" style="width: 18rem; border: #594545;">
+                  <img src="img/profile3.jpg" class="card-img-top rounded-pill" style="box-shadow: 0 4px 8px 0 rgba(0,0,0,0.5);" alt="..." >
+                  <div class="card-body">
+                    <h5 class="card-title">San Andreas</h5>
+                    <p class="card-text">Fullstack Web </p>
+                    <button
+                        class="btn btn-light"
+                        type="submit"
+                        style="background-color: #815b5b; color: antiquewhite"
+                      >
+                        See Project
+                      </button>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="col-sm-4">
+                <div class="card" style="width: 18rem; border: #594545;">
+                  <img src="img/profile4.jpg" class="card-img-top rounded-pill" style="box-shadow: 0 4px 8px 0 rgba(0,0,0,0.5);" alt="..." >
+                  <div class="card-body">
+                    <h5 class="card-title">Raymond Gianto</h5>
+                    <p class="card-text">Data Analyst </p>
+                    <button
+                        class="btn btn-light"
+                        type="submit"
+                        style="background-color: #815b5b; color: antiquewhite"
+                      >
+                        See Project
+                      </button>
+                  </div>
+                </div>
+              </div> -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Bagian Akhir Popular -->
+
+    <!-- Bagian Awal Podcast -->
+    <section class="podcast">
+      <div class="section-header-team text-center">
+        <br />
+        <h2 style="color: #a3d8f4">Popular Genre Podcast</h2>
+        <p>
+          have established good cooperation for the future of <br />
+          technology Lorem ipsum dolor sit amet consectetur.
+        </p>
+        <br />
+      </div>
+      <div class="row">
+        <div class="col-sm-3" style="border-radius: 10px">
+          <img
+            src="img/motivation.jpg"
+            alt="Notebook"
+            style="width: 100%; border-radius: 10px"
+          />
+          <div class="content" style="border-radius: 10px">
+            <h3>Motivation</h3>
+            <p>100 podcast channel</p>
+          </div>
+        </div>
+        <div class="col-sm-3">
+          <img
+            src="img/love.jpg"
+            alt="Notebook"
+            style="width: 100%; border-radius: 10px"
+          />
+          <div class="content" style="border-radius: 10px">
+            <h3>Love</h3>
+            <p>100 podcast channel</p>
+          </div>
+        </div>
+        <div class="col-sm-3">
+          <img
+            src="img/humor.jpg"
+            alt="Notebook"
+            style="width: 100%; border-radius: 10px"
+          />
+          <div class="content" style="border-radius: 10px">
+            <h3>Humor</h3>
+            <p>100 podcast channel</p>
+          </div>
+        </div>
+        <div class="col-sm-3">
+          <img
+            src="img/hororr.jpg"
+            alt="Notebook"
+            style="width: 100%; border-radius: 10px"
+          />
+          <div class="content" style="border-radius: 10px">
+            <h3>Horor</h3>
+            <p>100 podcast channel</p>
+          </div>
+        </div>
+      </div>
+      <br />
+      <div class="row">
+        <div class="col-sm-3">
+          <img
+            src="img/daily.jpg"
+            alt="Notebook"
+            style="width: 100%; border-radius: 10px"
+          />
+          <div class="content" style="border-radius: 10px">
+            <h3>Daily</h3>
+            <p>100 podcast channel</p>
+          </div>
+        </div>
+        <div class="col-sm-3">
+          <img
+            src="img/logg.png"
+            alt="Notebook"
+            style="width: 100%; border-radius: 10px"
+          />
+          <div class="content" style="border-radius: 10px">
+            <h3>Health</h3>
+            <p>100 podcast channel</p>
+          </div>
+        </div>
+        <div class="col-sm-3">
+          <img
+            src="img/life-style.jpg"
+            alt="Notebook"
+            style="width: 100%; border-radius: 10px"
+          />
+          <div class="content" style="border-radius: 10px">
+            <h3>Life-style</h3>
+            <p>100 podcast channel</p>
+          </div>
+        </div>
+        <div class="col-sm-3">
+          <img
+            src="img/logg.png"
+            alt="Notebook"
+            style="width: 100%; border-radius: 10px"
+          />
+          <div class="content" style="border-radius: 10px">
+            <h3>Sport</h3>
+            <p>100 podcast channel</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Bagian Akhir Podcast -->
+
+    <!-- Bagian Awal Membership -->
+    <section class="membership">
+      <div class="container">
+        <div class="row">
+          <div class="section-header-team text-center">
+            <br />
+            <h2 style="color: #7579e7">Plan For Everyone</h2>
+            <p>
+              have established good cooperation for the future of <br />
+              technology Lorem ipsum dolor sit amet consectetur.
+            </p>
+            <br />
+          </div>
+          <div class="section">
+            <div class="row">
+              <div class="col-sm-2"></div>
+              <div class="col-sm-4">
+                <div
+                  class="row"
+                  style="
+                    background-color: #202040;
+                    border-radius: 25px;
+                    width: 350px;
+                    height: 350px;
+                  "
+                >
+                  <div class="member" style="margin-top: 20px">
+                    <h2>Basic ( Free )</h2>
+                    <br />
+                    <img
+                      src="icon/checkbox.png"
+                      width="20px"
+                      height="20px"
+                      style="border-radius: 15px"
+                      alt=""
+                    />
+                    Up to 20 Shows<br />
+                    <img
+                      src="icon/checkbox.png"
+                      width="20px"
+                      height="20px"
+                      style="border-radius: 15px"
+                      alt=""
+                    />
+                    Unlimitid Episodes<br />
+                    <img
+                      src="icon/checkbox.png"
+                      width="20px"
+                      height="20px"
+                      style="border-radius: 15px"
+                      alt=""
+                    />
+                    50.00 monthly Download<br />
+                    <img
+                      src="icon/checkbox.png"
+                      width="20px"
+                      height="20px"
+                      style="border-radius: 15px"
+                      alt=""
+                    />
+                    Price shown afet 40% discount applied discount applicable
+                    for first 12 month<br />
+                    <br />
+                    <a
+                      class="btn btn-light"
+                      type="button"
+                      href="halaman-daftar.html"
+                      style="
+                        margin-left: 100px;
+                        margin-top: 30px;
+                        color: #202040;
+                      "
+                    >
+                      <b>7 days trial</b>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-4">
+                <div
+                  class="row"
+                  style="
+                    background-color: #202040;
+                    border-radius: 25px;
+                    width: 350px;
+                    height: 350px;
+                  "
+                >
+                  <div class="member" style="margin-top: 20px">
+                    <h2>Enterprise ( $126 )</h2>
+                    <br />
+                    <img
+                      src="icon/checkbox.png"
+                      width="20px"
+                      height="20px"
+                      style="border-radius: 15px"
+                      alt=""
+                    />
+                    Pre & Post Roll Ads<br />
+                    <img
+                      src="icon/checkbox.png"
+                      width="20px"
+                      height="20px"
+                      style="border-radius: 15px"
+                      alt=""
+                    />
+                    Transcription (10hr/month)<br />
+                    <img
+                      src="icon/checkbox.png"
+                      width="20px"
+                      height="20px"
+                      style="border-radius: 15px"
+                      alt=""
+                    />
+                    100.000 monthly downloads<br />
+                    <img
+                      src="icon/checkbox.png"
+                      width="20px"
+                      height="20px"
+                      style="border-radius: 15px"
+                      alt=""
+                    />
+                    Advance podcast with Google Analytic , Integration,Custom
+                    Host Bio, Custom Domains<br />
+                    <br />
+                    <a
+                      class="btn btn-light"
+                      type="button"
+                      href="halaman-daftar.html"
+                      style="margin-left: 85px; color: #202040"
+                    >
+                      <b>Get Subscription</b>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-2"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Bagian Akhir Membership  -->
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+      <path
+        fill="#ffffff"
+        fill-opacity="1"
+        d="M0,32L48,42.7C96,53,192,75,288,74.7C384,75,480,53,576,74.7C672,96,768,160,864,186.7C960,213,1056,203,1152,170.7C1248,139,1344,85,1392,58.7L1440,32L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"
+      ></path>
+    </svg>
+    <!-- Bagian Awal Comunity -->
+    <section class="comunity">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-4">
+            <h1>Get in Touch with use</h1>
+            <h4>Get Notified evry time web post an new episodes</h4>
+            <h1>A quick and easy to make your Own Podcast</h1>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing. Lorem, ipsum
+              dolor.
+            </p>
+          </div>
+          <div class="col-sm-4">
+            <img
+              src="img/comunity 2.png"
+              alt=""
+              width="300"
+              height="350"
+              srcset=""
+            />
+          </div>
+          <div class="col-sm-4">
+            <b>Join our Comunity</b>
+            <br />
+            <br />
+            <input
+              type="Email"
+              class="form-control"
+              id="exampleInputnik"
+              placeholder="Masukkan Email"
+              style="width: 300px"
+            />
+            <br />
+            <button
+              type="button"
+              class="btn btn-light"
+              style="background-color: #7579e7; color: white; border: 0"
+            >
+              <b>Join</b>
+            </button>
+            <br />
+            <br />
+            <h4>Get Notified every time web post an new episodes</h4>
+            <h1>A quick and easy to make your Own Podcast</h1>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Bagian Akhir Comunity -->
+
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+      <path
+        fill="#fff"
+        fill-opacity="1"
+        d="M0,160L60,154.7C120,149,240,139,360,160C480,181,600,235,720,234.7C840,235,960,181,1080,181.3C1200,181,1320,235,1380,261.3L1440,288L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"
+      ></path>
+    </svg>
+    <!-- Bagian Awal Footer -->
+    <footer class="text-white text-center p-3">
+      <div class="container text-center text-md-center">
+        <div class="row tect-center text-md-left">
+          <div class="col -md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+            <img src="icon/logo-rev-warna.png" alt="" />
+            <br />
+            <img
+              src="img/instagram.png"
+              width="50px"
+              height="50px"
+              alt=""
+              style="border-radius: 5px"
+            />
+            <img src="img/facebook.png" width="50px" height="50px" alt="" />
+            <img
+              src="img/twitter.png"
+              width="50px"
+              height="50px"
+              style="border-radius: 10px"
+              alt=""
+            />
+          </div>
+
+          <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+            <h5 class="text-uppercase mb-4 font-weight-bold">Episode</h5>
+
+            <p>
+              <a href="#" class="" style="text-decoration: none">Horror</a>
+            </p>
+            <p>
+              <a href="#" class="" style="text-decoration: none">Daily</a>
+            </p>
+            <p>
+              <a href="#" class="" style="text-decoration: none">Humor</a>
+            </p>
+            <p>
+              <a href="#" class="" style="text-decoration: none">love</a>
+            </p>
+          </div>
+          <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+            <h5 class="text-uppercase mb-4 font-weight-bold">Trending</h5>
+
+            <p>
+              <a href="#" class="" style="text-decoration: none">Life-style</a>
+            </p>
+            <p>
+              <a href="#" class="" style="text-decoration: none">Health</a>
+            </p>
+            <p>
+              <a href="#" class="" style="text-decoration: none">Sport</a>
+            </p>
+            <p>
+              <a href="#" class="" style="text-decoration: none">Motivation</a>
+            </p>
+          </div>
+          <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+            <h5 class="text-uppercase mb-4 font-weight-bold">Blog</h5>
+
+            <p>
+              <a href="#" class="" style="text-decoration: none">Sport</a>
+            </p>
+            <p>
+              <a href="#" class="" style="text-decoration: none">Motivation</a>
+            </p>
+            <p>
+              <a href="#" class="" style="text-decoration: none">Horror</a>
+            </p>
+            <p>
+              <a href="#" class="" style="text-decoration: none">Daily</a>
+            </p>
+          </div>
+        </div>
+        <hr class="mb-4" />
+        <div class="row align-items-center">
+          <div class="">
+            <p class="text-center">
+              Created with love &#169;
+              <a
+                href="https://www.instagram.com/temanwaktu_official/"
+                class="fw-bold"
+                >Podium</a
+              >
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- <p>Created with love by <a href="https://www.instagram.com/temanwaktu_official/" class="text-white fw-bold">TemanWaktuOfficial</a></p> -->
+    </footer>
+    <!-- Bagian Akhir Footer -->
+    <!-- <section class="podcast">
+      <div class="container">
+        <img src="img/logg.png" alt="Notebook" style="width:100px; height: 90px;">
+        <div class="content">
+          <h1>Heading</h1>
+          <p>Lorem ipsum..</p>
+        </div>
+      </div>
+    </section> -->
+    <!-- Bagian Akhir Podcast -->
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    -->
+  </body>
+</html>
